@@ -1,0 +1,70 @@
+:root {
+    --bg-color: #0f0f0f;
+    --text-color: white;
+    --bar-color: turquoise;
+    --compare-color: crimson;
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  #array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+  }
+  
+  .bar {
+    width: 10px;#status {
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: lime;
+      }
+      
+      input[type="text"] {
+        width: 200px;
+        padding: 5px;
+        margin: 5px;
+        font-family: monospace;
+      }
+      
+      label {
+        margin: 0 10px;
+      }
+      
+    margin: 0 1px;
+    background-color: var(--bar-color);
+    transition: height 0.2s ease;
+  }
+  
+  .compare {
+    background-color: var(--compare-color) !important;
+  }
+  
+  .light-mode {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --bar-color: #0077cc;
+    --compare-color: orangered;
+  }
+  

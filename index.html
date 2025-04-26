@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>🧠 Algorithm Visualizer</h1>
+    <button id="theme-toggle">🌗 Toggle Theme</button>
+  </div>
+
+  <div class="controls">
+    <select id="algorithmSelect">
+      <option value="bubble">Bubble Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="merge">Merge Sort</option>
+      <option value="quick">Quick Sort</option>
+      <option value="bfs">Breadth First Search (BFS)</option>
+      <option value="dfs">Depth First Search (DFS)</option>
+    </select>
+
+    <label>Speed:
+      <input type="range" id="speedRange" min="10" max="1000" step="10" value="200">
+      <span id="speedValue">800ms</span>
+    </label>
+
+    <label>Custom Array: 
+      <input type="text" id="customArray" placeholder="e.g. 5,3,8,1">
+    </label>
+
+    <button onclick="generateArray()">Generate Random</button>
+    <button onclick="startVisualization()">▶ Start</button>
+    <button onclick="pauseVisualization()">⏸ Pause</button>
+    <button onclick="resumeVisualization()">⏯ Resume</button>
+    <button onclick="resetVisualization()">🔄 Reset</button>
+  </div>
+
+  <div id="explanation"></div>
+  <div id="status">Status: Idle</div>
+  <div id="array-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
